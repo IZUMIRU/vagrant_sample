@@ -13,8 +13,7 @@ gem 'simple_form'
 group :development do
   gem 'mysql2', '>= 0.3.18', '< 0.5'
 end
-group :production do
-  gem 'pg'
+group :production, :staging do
   gem 'rails_12factor'
 end
 
