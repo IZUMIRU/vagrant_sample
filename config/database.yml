@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: vagrant_sample_production
   username: vagrant_sample
   password: <%= ENV['VAGRANT_SAMPLE_DATABASE_PASSWORD'] %>
